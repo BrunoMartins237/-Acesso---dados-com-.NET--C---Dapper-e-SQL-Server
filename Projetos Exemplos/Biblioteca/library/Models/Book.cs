@@ -1,8 +1,10 @@
 using System;
+using Dapper.Contrib.Extensions;
 
 namespace library.Models
 {
-    public class Books
+    [Table("[Book]")]
+    public class Book
     {
        public Guid Id { get; set; }
        public string Title { get; set; }

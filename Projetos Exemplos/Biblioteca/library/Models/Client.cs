@@ -1,7 +1,9 @@
 using System;
+using Dapper.Contrib.Extensions;
 
 namespace library.Models
 {
+    [Table("[Client]")]
     public class Client
     {
         public Guid Id { get; set; }

@@ -1266,11 +1266,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Bruno\\Dev\\library\\library.csproj",
+      "projectUniqueName": "C:\\Users\\Bruno\\Documents\\GitHub\\-Acesso---dados-com-.NET--C---Dapper-e-SQL-Server\\Projetos Exemplos\\Biblioteca\\library\\library.csproj",
       "projectName": "library",
-      "projectPath": "C:\\Users\\Bruno\\Dev\\library\\library.csproj",
+      "projectPath": "C:\\Users\\Bruno\\Documents\\GitHub\\-Acesso---dados-com-.NET--C---Dapper-e-SQL-Server\\Projetos Exemplos\\Biblioteca\\library\\library.csproj",
       "packagesPath": "C:\\Users\\Bruno\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Bruno\\Dev\\library\\obj\\",
+      "outputPath": "C:\\Users\\Bruno\\Documents\\GitHub\\-Acesso---dados-com-.NET--C---Dapper-e-SQL-Server\\Projetos Exemplos\\Biblioteca\\library\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Bruno\\AppData\\Roaming\\NuGet\\NuGet.Config"

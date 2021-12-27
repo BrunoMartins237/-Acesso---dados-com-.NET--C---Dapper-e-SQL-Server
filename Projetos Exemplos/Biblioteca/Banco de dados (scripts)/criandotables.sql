@@ -20,7 +20,7 @@ CREATE TABLE [LitaryGenre](
 )
 GO
 
-CREATE TABLE [Books](
+CREATE TABLE [Book](
     [Id] UNIQUEIDENTIFIER NOT NULL,
     [Title] NVARCHAR(180) NOT NULL,
     [ISBN] NVARCHAR(100) NOT NULL,
@@ -29,20 +29,20 @@ CREATE TABLE [Books](
     [YearOfPublication] DATETIME NOT NULL,
     [LitaryGenreId] UNIQUEIDENTIFIER NOT NULL, 
 
-    CONSTRAINT [PK_Books] PRIMARY KEY ([Id]),
-    CONSTRAINT [FK_Books_LitaryGenre] FOREIGN KEY ([LitaryGenreId])
+    CONSTRAINT [PK_Book] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Book_LitaryGenre] FOREIGN KEY ([LitaryGenreId])
         REFERENCES [LitaryGenre]([Id])
 )
 GO
 
-CREATE TABLE [ClientBooks](
+CREATE TABLE [ClientBook](
     [ClientId] UNIQUEIDENTIFIER NOT NULL,
-    [BooksId] UNIQUEIDENTIFIER NOT NULL,
+    [BookId] UNIQUEIDENTIFIER NOT NULL,
     [StartDate] DATETIME NOT NULL,
     [Order] TINYINT NOT NULL,
 
-    CONSTRAINT [PK_ClientBooks] PRIMARY KEY ([ClientId], [BooksId]),
-    CONSTRAINT [FK_ClientBooks_Client_ClientId] FOREIGN KEY ([ClientId]) REFERENCES [Client]([Id]),
-    CONSTRAINT [FK_ClientBooks_Books_BooksId] FOREIGN KEY ([BooksId]) REFERENCES [Books]([Id])
+    CONSTRAINT [PK_ClientBook] PRIMARY KEY ([ClientId], [BookId]),
+    CONSTRAINT [FK_ClientBook_Client_ClientId] FOREIGN KEY ([ClientId]) REFERENCES [Client]([Id]),
+    CONSTRAINT [FK_ClientBooks_Book_BookId] FOREIGN KEY ([BookId]) REFERENCES [Book]([Id])
 )
 GO
