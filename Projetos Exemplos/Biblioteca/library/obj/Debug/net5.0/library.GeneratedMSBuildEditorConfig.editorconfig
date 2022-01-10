@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = library
-build_property.ProjectDir = c:\Users\Bruno\Documents\GitHub\-Acesso---dados-com-.NET--C---Dapper-e-SQL-Server\Projetos Exemplos\Biblioteca\library\
+build_property.ProjectDir = C:\Users\Bruno\Dev\Projetos Exemplos\Biblioteca\library\

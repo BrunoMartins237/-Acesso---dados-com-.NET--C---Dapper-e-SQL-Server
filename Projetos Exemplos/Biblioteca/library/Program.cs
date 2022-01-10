@@ -1,8 +1,6 @@
 ﻿using System;
+using library.Screens.ClientScreen;
 using Microsoft.Data.SqlClient;
-using Dapper;
-using library.Models;
-using library.Repositories;
 
 namespace library
 {
@@ -14,33 +12,29 @@ namespace library
             var connection = new SqlConnection(connectionString);
             
                 connection.Open();
-                CreateClient(connection);
-                ReadClients(connection);
-
+                
+                Load();
+                Console.ReadKey();
                 connection.Close();
         }
-        public static void CreateClient(SqlConnection connection)
+        private static void Load()
         {
-            var repository = new Repository<Client>(connection);
-            var client = new Client();
-            client.Nome = "Júnior Filho";
-            client.Phone = "8578965178";
-            client.Email = "juniorfilhojunior@";
-            client.Cpf = "0124568796455";
-            client.Birthday = new DateTime(1980, 5, 3);
-            client.Activated = true;
+            Console.Clear();
+            Console.WriteLine("Biblioteca Virtual");
+            Console.WriteLine("------------------");
+            Console.WriteLine("O que deseja fazer?");
+            Console.WriteLine();
+            Console.WriteLine("1 - Gestão de Usuário");
+            var option = short.Parse(Console.ReadLine());
 
-            repository.Create(client);
-
-            Console.WriteLine("1 linha alterada");
-        }
-        public static void ReadClients(SqlConnection connection)
-        {
-            var repository = new Repository<Client>(connection);
-            var clients = repository.Get();
-
-            foreach(var client in clients)
-                Console.WriteLine(client.Nome);
+            switch(option)
+            {
+                case 1:
+                    MenuClientScreen.Load();
+                    break;
+                default: Load(); break;
+            }
         }
     }
 }
+    
