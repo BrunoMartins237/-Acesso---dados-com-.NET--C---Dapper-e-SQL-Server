@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Ip5kgIrEsv8fyV7oZUiQ6jToCNdS1Xs1V7+oqZfeKJEvJ7/YyFrD88lS9DxLpZbY/wX39kfd+rG5FfbiMgK4nA==",
+  "dgSpecHash": "NLI6jDyJXsrJf8NPeW5kH440RVzz2+cKd/iVXDae5yl7F8+n5x2aa4XQhKFj0q60TCZIMH5FPvrRb8laON3rew==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Bruno\\Dev\\Projetos Exemplos\\Biblioteca\\library\\library.csproj",
+  "projectFilePath": "C:\\Users\\Bruno\\Documents\\GitHub\\-Acesso---dados-com-.NET--C---Dapper-e-SQL-Server\\Projetos Exemplos\\Biblioteca\\library\\library.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Bruno\\.nuget\\packages\\dapper\\2.0.90\\dapper.2.0.90.nupkg.sha512",
     "C:\\Users\\Bruno\\.nuget\\packages\\dapper.contrib\\2.0.78\\dapper.contrib.2.0.78.nupkg.sha512",

@@ -17,8 +17,6 @@ namespace library.Screens.ClientScreen
             var name = Console.ReadLine();
             Console.WriteLine("CPF:");
             var cpf = Console.ReadLine();
-            Console.WriteLine("Data de Nascimento: dd-mm-aaaa");
-            var birthday = DateTime.Parse(Console.ReadLine());
             Console.WriteLine("E-mail:");
             var email = Console.ReadLine();
             Console.WriteLine("Telefone:");
@@ -28,9 +26,9 @@ namespace library.Screens.ClientScreen
             {
                 Nome = name,
                 Cpf = cpf,
-                Birthday = birthday,
                 Email = email,
-                Phone = phone
+                Phone = phone,
+                Activated = true
 
             });
             Console.ReadKey();
@@ -45,10 +43,10 @@ namespace library.Screens.ClientScreen
             var repository = new Repository<Client>(Datebase.Connection);
             repository.Create(client);
             Console.WriteLine("Usuário cadastrado com sucesso.");
-            } catch(Exception ex)
+            } catch
             {
                 Console.WriteLine("Não foi possível salvar usuário.");
-                Console.WriteLine(ex.Message);
+                
             }
         }
     }

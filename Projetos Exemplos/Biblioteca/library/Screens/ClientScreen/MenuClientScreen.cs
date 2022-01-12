@@ -1,4 +1,5 @@
 using System;
+using Biblioteca.Screens.ClientScreen;
 
 namespace library.Screens.ClientScreen
 {
@@ -12,6 +13,7 @@ namespace library.Screens.ClientScreen
             Console.WriteLine("O que deseja fazer?");
             Console.WriteLine();
             Console.WriteLine("1 - Cadastrar novo usuário");
+            Console.WriteLine("2 - Listar usuários");
             Console.WriteLine();
             Console.WriteLine();
             var option = short.Parse(Console.ReadLine());
@@ -20,6 +22,9 @@ namespace library.Screens.ClientScreen
             {
                 case 1:
                     CreateClientScreen.Load();
+                    break;
+                case 2:
+                    ListClientScreen.Load();
                     break;
                 default: Load(); break;
             }  
